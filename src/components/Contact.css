@@ -1,0 +1,93 @@
+
+
+.contact-section {
+  padding: 120px 40px;
+  background: #FFFFFF;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-container h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6em;
+  font-weight: 500;
+  color: var(--yazi-koyu);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Çiçekçi görselindeki o zarif alt çizgi efekti */
+.contact-container h2::after {
+  content: "♡";
+  display: block;
+  font-size: 0.4em;
+  color: var(--soft-yesil);
+  margin-top: 10px;
+  letter-spacing: 5px;
+}
+
+/* Form Kutusu Tasarımı */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  background: #FAFBFB;
+  padding: 45px;
+  border-radius: 24px; /* Ürün kartlarıyla uyumlu oval pürüzsüz köşeler */
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.01);
+}
+
+/* İnputlar ve Textarea */
+.contact-form input, 
+.contact-form textarea {
+  padding: 16px 20px;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px; /* İç inputların da köşeleri yumuşatıldı */
+  font-size: 0.95em;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  outline: none;
+  background: var(--beyaz);
+  color: var(--yazi-koyu);
+  transition: all 0.3s ease;
+}
+
+/* Kutulara tıklanınca yanan soft yeşil çerçeve efekti */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+  border-color: var(--soft-yesil);
+  box-shadow: 0 0 0 4px rgba(77, 119, 87, 0.08);
+}
+
+.contact-form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+/* WhatsApp ile Gönder Butonu */
+.contact-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--ana-yesil);
+  color: var(--beyaz);
+  border: none;
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.contact-submit-btn:hover {
+  background: var(--soft-yesil);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(77, 119, 87, 0.2);
+}

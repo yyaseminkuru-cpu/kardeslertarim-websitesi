@@ -1,0 +1,105 @@
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: var(--cam-arkaplan);
+  backdrop-filter: blur(10px); /* Arkadaki içeriği buzlu cam yapar */
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  z-index: 1000;
+}
+
+.nav-logo {
+  text-align: center;
+}
+
+.brand-name {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: var(--ana-yesil);
+}
+
+.logo-sub {
+  font-size: 0.65em;
+  letter-spacing: 3px;
+  color: var(--yazi-soft);
+  display: block;
+  margin-top: -2px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--yazi-koyu);
+  font-size: 0.95em;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--soft-yesil);
+}
+
+.nav-whatsapp {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .navbar-container {
+    position: fixed !important; /* Menüyü ekrana sabitler, aşağı kaydırınca da kaybolmaz */
+    top: 0 !important;
+    left: 0 !important;   /* SOLA SIFIRLA */
+    right: 0 !important;  /* SAĞA SIFIRLA */
+    width: 100% !important; /* EKRANI TAM KAPLA */
+    
+    /* Mevcut diğer kodların (padding, background, box-shadow vs.) bunun hemen altında aynen kalabilir */
+    flex-direction: column !important;
+    padding: 15px 10px !important;
+    background: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04) !important;
+    box-sizing: border-box !important;
+    z-index: 9999 !important; /* Sitenin diğer elemanlarının arkasında kalmasın, hep en üstte dursun */
+  }
+}   
+
+  .nav-links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    margin-top: 10px !important;
+    width: 100% !important;
+  }
+
+  .nav-btn {
+    background: #f4f6f5 !important;
+    color: #2d4a36 !important;
+    padding: 6px 12px !important;
+    border-radius: 20px !important;
+    font-size: 0.85em !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+  }
+
+  .nav-btn-whatsapp {
+    background: #25D366 !important;
+    color: white !important;
+    padding: 6px 14px !important;
+    border-radius: 20px !important;
+    font-size: 0.85em !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+  }

@@ -1,0 +1,63 @@
+.footer {
+  background-color: var(--koyu-yesil);
+  color: #D1DDD4;
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 4px solid var(--soft-turuncu);
+}
+
+.footer p {
+  font-size: 0.95em;
+  margin-bottom: 5px;
+}
+
+.footer-credit {
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+.premium-footer {
+  background: #1e3325;
+  color: #e2e8f0;
+  padding: 40px 20px;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-left p {
+  margin: 5px 0;
+}
+
+.footer-credit {
+  color: #a0aec0;
+  font-size: 0.85em;
+}
+
+.footer-right h4 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.footer-right p {
+  margin: 6px 0;
+  color: #cbd5e0;
+}
+
+/* Mobil için tam uyum */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column-reverse; /* Mobilde adres üste, telif alta gelsin */
+    text-align: center;
+  }
+}

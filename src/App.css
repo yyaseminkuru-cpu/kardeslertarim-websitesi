@@ -1,0 +1,51 @@
+/* ==========================================================================
+   BU KOD SİTEYİ TELEFONDA NAVBAR GENİŞLİĞİNE KİLİTLER VE TAŞMAYI SIFIRLAR
+   ========================================================================== */
+
+/* Bilgisayar ve Genel Ayarlar */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 1. Kural: Mobilde dışarı taşmaya çalışan HER ŞEYİ zorla ekran sınırına çekiyoruz */
+@media (max-width: 768px) {
+  
+  html, body, #root, .App, main, section, div {
+    max-width: 100vw !important; /* Hiçbir kutu telefon ekranından geniş olamaz */
+    box-sizing: border-box !important;
+  }
+
+  body {
+    overflow-x: hidden !important; /* Sağa doğru kayma hareketini tamamen yasaklar */
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 2. Kural: Sitenin tüm ana bölümlerini navbar gibi ekranın kenarlarına sıfırlıyoruz */
+  .hero-section, .premium-about, .products-section, .services-section, #contact, .premium-footer {
+    width: 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* 3. Kural: Sağa doğru taşma yapan o inatçı küçük rozetleri/kartları hizaya sokuyoruz */
+  .features-container, .hero-badges-container, .about-grid-container {
+    display: flex !important;
+    flex-direction: column !important; /* YAN YANA DURMAYI BIRAKIP ALT ALTA DİZİLİRLER */
+    align-items: center !important;
+    width: 100% !important;
+    gap: 15px !important;
+    margin: 20px 0 0 0 !important;
+  }
+
+  /* 4. Kural: Kartların telefon ekranından taşmasını kesin olarak engelleme */
+  .feature-card, .badge-item, .product-card, .service-card {
+    width: 100% !important;
+    max-width: 290px !important; /* Telefon ekranının genişliğine tam uyum sağlar */
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+}

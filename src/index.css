@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  /* Görseldeki gibi premium ve gözü dinlendiren soft tarım tonları */
+  --ana-yesil: #3A5F43;        /* Güven veren, olgun zeytin yeşili */
+  --soft-yesil: #4D7757;       /* Butonlar ve vurgular için biraz daha canlı ton */
+  --arka-plan-gradient: linear-gradient(180deg, #EAF2EC 0%, #F4F7F5 50%, #FFFFFF 100%); /* Görseldeki gibi yukarıdan aşağıya yumuşak geçiş */
+  --krem: #F9F6F0;             /* Bölüm geçişleri için şık buğday kreması */
+  --yazi-koyu: #1A2E22;        /* Başlıklar için derin zeytin siyahı */
+  --yazi-soft: #5C6B60;        /* Açıklamalar için tatlı füme yeşil */
+  --beyaz: #FFFFFF;
+  --cam-arkaplan: rgba(255, 255, 255, 0.75); /* Cam efekti için şeffaf beyaz */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif; /* Temiz modern font */
+  color: var(--yazi-soft);
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+/* Şık Başlık Fontu */
+h1, h2, h3, .brand-name {
+  font-family: 'Playfair Display', serif; /* Görseldeki o asil başlık tipi */
+  color: var(--yazi-koyu);
+}

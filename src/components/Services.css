@@ -1,0 +1,74 @@
+.premium-services {
+  padding: 120px 40px;
+  background-color: var(--krem); /* Buğday kreması arka planımız */
+  text-align: center;
+}
+
+.services-heading-area .services-pre-title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.2em;
+  color: var(--soft-yesil);
+  margin-bottom: 10px;
+}
+
+.services-heading-area h2 {
+  font-size: 2.5em;
+  font-weight: 500;
+  color: var(--yazi-koyu);
+}
+
+.services-divider {
+  color: var(--soft-yesil);
+  margin: 10px 0 40px 0;
+  font-size: 0.9em;
+  letter-spacing: 5px;
+}
+
+.services-list-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Alt alta sıralanan şık çizgisel satırlar */
+.service-row-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 20px;
+  border-bottom: 1px solid rgba(92, 107, 96, 0.15);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.service-row-item:last-child {
+  border-bottom: none; /* Son elemanın altındaki çizgiyi kaldırır */
+}
+
+/* Üzerine gelince çok hafifçe sağa kayma efekti */
+.service-row-item:hover {
+  transform: translateX(10px);
+}
+
+.service-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2em;
+  color: var(--soft-yesil);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.service-info-text h3 {
+  font-size: 1.35em;
+  font-weight: 500;
+  color: var(--yazi-koyu);
+  margin-bottom: 8px;
+}
+
+.service-info-text p {
+  font-size: 1.05em;
+  color: var(--yazi-soft);
+  line-height: 1.7;
+}

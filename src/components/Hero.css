@@ -1,0 +1,178 @@
+.hero-premium {
+  position: relative;
+  min-height: 95vh;
+  background: var(--arka-plan-gradient);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 120px 20px 80px 20px;
+}
+
+/* Görseldeki o ışık/derinlik hissini veren arka plan efektleri */
+.hero-blur-effect {
+  position: absolute;
+  top: 10%;
+  width: 600px;
+  height: 600px;
+  background: rgba(77, 119, 87, 0.08);
+  filter: blur(120px);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 750px;
+}
+
+.hero-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.4em;
+  color: var(--soft-yesil);
+  margin-bottom: 15px;
+}
+.hero-about-btn {
+  text-decoration: none;
+  background: var(--ana-yesil);
+  color: var(--beyaz);
+  border: none;
+  padding: 14px 35px;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-about-btn:hover {
+  background: var(--soft-yesil);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(77, 119, 87, 0.3);
+}
+
+.hero-title {
+  font-size: 3.8em;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--yazi-koyu);
+  margin-bottom: 25px;
+}
+
+.hero-description {
+  font-size: 1.15em;
+  line-height: 1.8;
+  color: var(--yazi-soft);
+  margin-bottom: 35px;
+  padding: 0 40px;
+}
+
+.hero-action-btn {
+  background: var(--ana-yesil);
+  color: var(--beyaz);
+  border: none;
+  padding: 14px 35px;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-action-btn:hover {
+  background: var(--soft-yesil);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(77, 119, 87, 0.3);
+}
+
+/* Özellik Şeridi (Görseldeki beyaz oval şerit) */
+.info-ribbon {
+  position: absolute;
+  bottom: -40px;
+  z-index: 10;
+  background: var(--beyaz);
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  max-width: 1100px;
+  padding: 25px;
+  border-radius: 50px; /* Tam oval */
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0,0,0,0.02);
+}
+
+.ribbon-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95em;
+  font-weight: 500;
+  color: var(--yazi-koyu);
+}
+/* Hero Bölümü Mobil Düzenlemesi */
+@media (max-width: 768px) {
+  /* Eğer rozetlerin kapsayıcısının sınıfı farklıysa ismini ona göre güncelleyebilirsin */
+  .hero-badges-container, .features-container, .visual-circle + div { 
+    flex-direction: column !important; /* Yan yana değil alt alta diz */
+    align-items: center;
+    gap: 15px !important;
+    width: 100% !important;
+    padding: 10px 20px !important;
+  }
+
+  /* Rozetlerin/Kartların kendi genişliği */
+  .badge-item, .feature-card { 
+    width: 100% !important;
+    max-width: 280px;
+    justify-content: center;
+    padding: 12px 20px !important;
+  }
+}
+/* Hero Alanı Mobil Düzenlemesi */
+/* Hero Alanı Mobil Kesin Çözüm */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 160px 15px 40px 15px !important; 
+    width: 100% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    text-align: center !important;
+    overflow-x: hidden !important;
+  }
+
+  .hero-title {
+    font-size: 1.8em !important; /* Büyük başlığı mobilde kibarlaştırdık */
+    line-height: 1.3 !important;
+    width: 100% !important;
+  }
+
+  /* Sağa doğru taşma yapan o rozetlerin/özelliklerin kapsayıcısı */
+  .features-container, .hero-badges-container {
+    display: flex !important;
+    flex-direction: column !important; /* YAN YANA DEĞİL, KESİNLİKLE ALT ALTA */
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 30px auto 0 auto !important;
+    float: none !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Rozetlerin/Kartların her biri */
+  .feature-card, .badge-item {
+    width: 100% !important;
+    max-width: 280px !important; /* Genişliğini ekran sınırlarına çektik */
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    white-space: normal !important; /* Yazıların sığmazsa alt satıra geçmesini sağlar */
+  }
+}
