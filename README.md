@@ -1,16 +1,28 @@
-# React + Vite
+# 🌾 Kardeşler Tarım - Kurumsal Web Sitesi (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tarım sektöründe faaliyet gösteren bir firma için modern web standartlarına uygun, dinamik, kullanıcı dostu ve tamamen responsive (mobil uyumlu) olarak geliştirilmiş kurumsal web sitesi projesi.
 
-Currently, two official plugins are available:
+## 🔗 Canlı Önizleme
+Proje şu anda aktif olarak yayındadır ve ziyaret edilebilir:
+> 🌐 https://kardesler-tarim.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎯 Projenin Amacı ve Özellikleri
+Firmanın dijital varlığını güçlendirmek, sunduğu ürün ve hizmetleri en doğru şekilde sergilemek amacıyla sıfırdan inşa edilmiştir.
+- ⚡ **Yüksek Performans:** React mimarisi ve Vite (veya Create React App) kullanılarak hızlı sayfa geçişleri sağlandı.
+- 📱 **Tam Responsive Tasarım:** Mobil, tablet ve masaüstü cihazlarla %100 uyumlu arayüz.
+- 🧩 **Modüler Bileşen Yapısı (Component-Based):** Tekrar kullanılabilir (reusable) React bileşenleri ile temiz ve sürdürülebilir kod yapısı.
+- 🎨 **Modern Arayüz Tasarımı:** Kullanıcı deneyimini (UX) ön planda tutan kurumsal ve estetik görsel tasarım.
 
-## React Compiler
+## 🛠️ Kullanılan Teknolojiler
+- **React:** Component tabanlı frontend mimarisi.
+- **JavaScript (ES6+):** Dinamik işlemler ve mantıksal kurgular.
+- **HTML5 & CSS3:** Semantik sayfa yapısı ve özel stil tasarımları.
+- **Geliştirme Araçları:** VS Code, Vite, Git, GitHub.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚙️ Projeyi Yerelde Çalıştırma
 
-## Expanding the ESLint configuration
+Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Projeyi bilgisayarınıza indirin (clone edin):
+```bash
+git clone [https://github.com/yyaseminkuru-cpu/kardeslertarim-websitesi.git](https://github.com/yyaseminkuru-cpu/kardeslertarim-websitesi.git)
